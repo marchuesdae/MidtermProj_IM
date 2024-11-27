@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #f6e0b5, #eea990, #aa6f73, #66545e);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+nav {
+    background-color: #f6e0b5;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(102, 84, 94, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #aa6f73;
+}
+
+nav .nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.button {
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 2px solid #aa6f73;
+    color: #aa6f73;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.button:hover {
+    background-color: #aa6f73;
+    color: #f6e0b5;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: #f6e0b5;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(102, 84, 94, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #aa6f73;
+    transition: 0.3s;
+}
+
+.tab-button.active {
+    border-bottom: 2px solid #aa6f73;
+    color: #66545e;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #a39193;
+    border-radius: 5px;
+    background-color: #f6e0b5;
+    color: #66545e;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    border-color: #aa6f73;
+}
+
+input[type="radio"] {
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    accent-color: #aa6f73;
+}
+
+label {
+    font-size: 12px;
+    margin-right: 15px;
+    color: #66545e;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f6e0b5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(102, 84, 94, 0.1);
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    background-color: #eea990;
+    border: 1px solid #a39193;
+    cursor: pointer;
+    font-weight: bold;
+    color: #66545e;
+}
+
+.tab-button.active {
+    background-color: #aa6f73;
+    color: #f6e0b5;
+}
+
+.form-content input, .form-content select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #a39193;
+    background-color: #f6e0b5;
+    color: #66545e;
+    font-size: 14px;
+}
+
+.form-content button {
+    width: 100%;
+    padding: 10px;
+    background-color: #aa6f73;
+    color: #f6e0b5;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-content button:hover {
+    background-color: #66545e;
+}
+
+.error-message {
+    color: #aa6f73;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.form-content {
+    display: none;
+}
+
+.form-content.active {
+    display: block;
+}
+
+.form-button {
+    background-color: #aa6f73;
+    color: #f6e0b5;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.form-button:hover {
+    background-color: #66545e;
+}
+
+.error-message {
+    color: #aa6f73;
+    font-size: 14px;
+}
+
+footer {
+    background-color: #f6e0b5;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(102, 84, 94, 0.1);
+}
+
+footer p {
+    color: #aa6f73;
+    font-size: 14px;
+}
+

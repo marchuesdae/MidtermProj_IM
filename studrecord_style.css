@@ -1,0 +1,141 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f6e0b5; 
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+
+.card {
+    
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(102, 84, 94, 0.2); 
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #66545e; 
+    color: #f6e0b5; 
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.btn-back {
+    background-color: #a39193; 
+    color: #f6e0b5; 
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: #eea990; 
+    color: #f6e0b5; 
+}
+
+
+.card-content {
+    padding: 20px;
+}
+
+
+.student-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px;
+    margin-top: 20px;
+}
+
+.student-table th, .student-table td {
+    padding: 10px 15px;
+    text-align: left;
+    border: 1px solid #aa6f73; 
+    background-color: #a39193; 
+    color: #f6e0b5; 
+}
+
+.student-table th {
+    background-color: #66545e; 
+    font-weight: bold;
+}
+
+
+.btn-delete {
+    background-color: #66545e; 
+    color: #f6e0b5; 
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-delete:hover {
+    background-color: #aa6f73; 
+    color: #f6e0b5;
+}
+
+
+.alert {
+    background-color: #eea990; 
+    color: #66545e;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #aa6f73;
+    border-radius: 5px;
+}
+
+.alert.success {
+    background-color: #f6e0b5; 
+    color: #66545e; 
+}
+
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #66545e;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 0.5rem 0;
+    border: 1px solid #aa6f73;
+    border-radius: 5px;
+    background-color: #f6e0b5;
+}
+
+
+.btn {
+    padding: 8px 16px;
+    background-color: #eea990; 
+    color: #66545e; 
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #aa6f73; 
+    color: #f6e0b5; 
+}
